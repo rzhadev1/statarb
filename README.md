@@ -2,13 +2,11 @@
 An implementation of a statistical arbitrage model, done on jupyter notebook. Based on Avendella, Lee 2008. 
 
 ### Notes
-- Only SP500 Stocks are used (with stocks that have less than 1 year of data exluded), although a larger stock universe should be used
-- ETF returns are used as market factors, but could be easily replaced by another multi-factor model such as PCA
-- Different signal parameters are used than described in Avendella, in order to lean more towards long positions than short positions 
+- Only SP500 Stocks are used (with stocks that have less than 1 year of data exluded)
 - 1 year of backtest data is used (August 3rd, 2020 - August 3rd, 2021)
 - Backtests start at day 60 in the data, as the estimation window is 60 days to account for 2 earnings cycles
-- The model is given $300,000 to simulate in backtest. This is to emulate a 130/30 fund with $1,000,000 in a market-wide index ETF such as SPY. The actual returns for this model would be the SP500 return + model returns, but the jupyter notebook focuses on the model return.
-- This model assumes frictionless transactions. 
+- The model is given $300,000 to simulate in backtest. 
+- This model assumes frictionless transactions, and no slippage. 
 
 
 ### An Overview of Statistical Arbitrage
