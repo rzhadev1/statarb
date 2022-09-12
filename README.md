@@ -1,5 +1,5 @@
 # statarb 
-An implementation of a statistical arbitrage model, done on jupyter notebook. Based on Avendella, Lee 2008. 
+An implementation of a statistical arbitrage model, done on jupyter notebook. Based on Avellaneda, Lee 2008. 
 
 ### Notes
 - Only SP500 Stocks are used (with stocks that have less than 1 year of data exluded)
@@ -11,7 +11,7 @@ An implementation of a statistical arbitrage model, done on jupyter notebook. Ba
 
 ### An Overview of Statistical Arbitrage
 
-As described by Avendella 2008, we assume that every stock in the trading universe has returns that follow the regression model:
+As described by Avellaneda 2008, we assume that every stock in the trading universe has returns that follow the regression model:
 <p align="center">
     <img src="https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{120}R_i&space;=&space;\beta_iF&space;&plus;&space;\widetilde{R}_i&space;" align="center">
 </p>
