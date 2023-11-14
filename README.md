@@ -12,14 +12,12 @@ An implementation of a statistical arbitrage model, done on jupyter notebook. Ba
 ### An Overview of Statistical Arbitrage
 
 As described by Avellaneda 2008, we assume that every stock in the trading universe has returns that follow the regression model:
-<p align="center">
-    <img src="https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{120}R_i&space;=&space;\beta_iF&space;&plus;&space;\widetilde{R}_i&space;" align="center">
-</p>
+$$R_i = \beta_i F + \widetilde{R}$$
 
 Where:
 
-- <img src="https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{120}\widetilde{R}_i&space;"> is a stock's individual/idiosyncratic return 
-- <img src="https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{120}\beta_iF"> are returns from a market portfolio <img src="https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{120}F"> projected by some market factors  <img src="https://latex.codecogs.com/png.image?\inline&space;\large&space;\dpi{120}\beta_i">. Note that each stock has differing projections from these market factors. 
+- $\widetilde{R}$ is a stock's individual/idiosyncratic return 
+- $\beta_i F$ are returns from a market portfolio $F$ projected by some market factors  $\beta_i$. Note that each stock has differing projections from these market factors. 
 
 Assuming that market returns and a stock's idiosyncratic return are uncorrelated, we can isolate the idiosyncratic return of each stock by taking a opposing position 
 in the market portfolio, such that the overall portfolio remains both dollar neutral and market neutral. Because we use only SP500 stocks as a trading universe, in practice the market portfolio is either $SPY or a corresponding industry ETF. This is referred to by generalized pairs trading, where instead of entering pairs trades between individual stocks, we enter positions against market portfolios. 
