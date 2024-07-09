@@ -9,7 +9,7 @@ An implementation of a statistical arbitrage model, done on jupyter notebook. Ba
 - This model assumes frictionless transactions, and no slippage. 
 
 
-### An Overview of Statistical Arbitrage
+### Paper Overview
 
 As described by Avellaneda 2008, we assume that every stock in the trading universe has returns that follow the regression model:
 $$R_i = \beta_i F + \widetilde{R}$$
